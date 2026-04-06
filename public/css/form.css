@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --body-color: #FFF5F8;
+    --sidebar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toogle-color: #DDD;
+    --text-color: #333;
+    --pink: #e84393;
+
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+}
+
+
+/* Home - Inicio */
+
+.home{
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+.home .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .header-home{
+    background: #fff;
+    padding: 18px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.03);
+}
+
+.header-home .logo{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+.header-home .logo span{
+    color: var(--pink);
+}
+
+.form {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.title i {
+    font-size: 22px;
+    color: #FF9AB8;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid rgba(255, 154, 184, 0.2);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #9B8FA8;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.card label i {
+    color: #FF9AB8;
+    font-size: 18px;
+}
+
+.card input,
+.card textarea {
+    width: 200px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #4A4458;
+    font-size: 16px;
+}
+
+.card input::placeholder,
+.card textarea::placeholder {
+    color: #9B8FA8;
+    opacity: 0.6;
+}
+
+.card input:focus,
+.card textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row .card {
+    flex: 1;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 16px;
+    background: #FF9AB8;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(255, 154, 184, 0.3);
+}
+
+.button button:active {
+    transform: scale(0.97);
+} 
+
